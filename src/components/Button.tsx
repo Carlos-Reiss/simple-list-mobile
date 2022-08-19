@@ -1,4 +1,4 @@
-import { IButtonProps, Button as NativeBaseButton, Text } from "native-base";
+import { IButtonProps, Button as NativeBaseButton, Text } from 'native-base';
 
 type ButtonProps = {
   title: string;
@@ -12,10 +12,9 @@ function Button(props: ButtonProps) {
       bg="primary.700"
       rounded="xl"
       _pressed={{
-        bg: "secondary.700",
+        bg: 'secondary.700',
       }}
-      {...props}
-    >
+      {...props}>
       <Text fontSize="md" color="white">
         {props.title}
       </Text>

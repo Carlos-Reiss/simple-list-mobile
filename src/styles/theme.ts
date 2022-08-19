@@ -3,10 +3,10 @@ import { extendTheme } from 'native-base';
 export const THEME = extendTheme({
   colors: {
     primary: {
-      700: '#F2796B'
+      700: '#F2796B',
     },
     secondary: {
-      700: '#F7A9A1'
+      700: '#F7A9A1',
     },
     green: {
       700: '#00875F',
@@ -23,10 +23,9 @@ export const THEME = extendTheme({
       400: '#323238',
       300: '#7C7C8A',
       200: '#C4C4CC',
-      100: '#F6F6F6'
-      
+      100: '#F6F6F6',
     },
-    white: '#FFFFFF'
+    white: '#FFFFFF',
   },
   fonts: {
     heading: 'Poppins_700Bold',
@@ -40,6 +39,6 @@ export const THEME = extendTheme({
   },
   sizes: {
     13: 43,
-    14: 56
-  }
+    14: 56,
+  },
 });
