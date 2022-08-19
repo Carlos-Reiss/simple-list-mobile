@@ -1,6 +1,6 @@
 import LottieView from 'lottie-react-native';
 import { Text, VStack } from 'native-base';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 import Logo from '../../assets/logo.svg';
 import { LoginButton } from '../../components/LoginButton';
