@@ -1,8 +1,8 @@
+import Logo from '@assets/logo.svg';
 import LottieView from 'lottie-react-native';
 import { Text, VStack } from 'native-base';
 import { useRef } from 'react';
 
-import Logo from '../../assets/logo.svg';
 import { LoginButton } from '../../components/LoginButton';
 import { loadingStore } from '../../stores/loading.store';
 
@@ -37,9 +37,9 @@ const Welcome = () => {
 
       <VStack flex={1} justifyContent="space-around" alignItems="center">
         <Text textAlign="center">
-          <Text fontWeight="bold">Simple List,</Text> Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Amet in, quaerat quis nulla, dolorem repellat error cum sequi veniam
-          sapiente sit impedit esse quos non facere iste, excepturi blanditiis repellendus.
+          Bem vindo ao
+          <Text fontWeight="bold"> Simple List,</Text> um aplicativo para planejar, compartilhar e
+          entender todas as suas despesas detalhadamente assim economizando seu suado dinheirinho.
         </Text>
       </VStack>
       <LoginButton onPress={handleLoading} />
