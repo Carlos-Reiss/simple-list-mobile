@@ -1,23 +1,17 @@
 import Logo from '@assets/logo.svg';
+import { LoginButton } from '@components/LoginButton';
+import { useNavigation } from '@react-navigation/native';
 import LottieView from 'lottie-react-native';
 import { Text, VStack } from 'native-base';
 import { useRef } from 'react';
 
-import { LoginButton } from '../../components/LoginButton';
-import { loadingStore } from '../../stores/loading.store';
-
 const Welcome = () => {
+  const navigation = useNavigation();
+
   const animation = useRef(null);
 
-  function handleLoading() {
-    loadingStore.setLoading({
-      loading: true,
-    });
-    setTimeout(() => {
-      loadingStore.setLoading({
-        loading: false,
-      });
-    }, 5000);
+  function handleSignIn() {
+    navigation.navigate('logup');
   }
 
   return (
@@ -39,10 +33,10 @@ const Welcome = () => {
         <Text textAlign="center">
           Bem vindo ao
           <Text fontWeight="bold"> Simple List,</Text> um aplicativo para planejar, compartilhar e
-          entender todas as suas despesas detalhadamente assim economizando seu suado dinheirinho.
+          entender todas as suas despesas detalhadamente, economizando seu suado dinheirinho. 💰
         </Text>
       </VStack>
-      <LoginButton onPress={handleLoading} />
+      <LoginButton onPress={handleSignIn} />
     </VStack>
   );
 };
